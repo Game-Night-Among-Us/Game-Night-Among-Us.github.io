@@ -7,6 +7,13 @@
     <style> body { background-color: #222634; } </style>
 </head>
     <body style="min-height: 100%; margin: 0px; background-color: #222634;" scrolling="no">
-    <iframe src="https://script.google.com/a/macros/wisc.edu/s/AKfycbzUmW4lODaG3t4GPe2x8fDiIavtiqMdMQVhplkqExqwg_xBMdW5WR0H6uouqDnojaFBFQ/exec" scrolling="no" style="position: absolute; height: 100%; border:none; width: 1px; min-width: 100%; background-color: #222634;"></iframe>
+    <iframe id="GameIFrame" src="https://script.google.com/a/macros/wisc.edu/s/AKfycbzUmW4lODaG3t4GPe2x8fDiIavtiqMdMQVhplkqExqwg_xBMdW5WR0H6uouqDnojaFBFQ/exec" scrolling="no" style="position: absolute; height: 100%; border:none; width: 1px; min-width: 100%; background-color: #222634;"></iframe>
+    <script type="text/javascript">
+    	$('#GameIFrame').load(function(){ 
+		    $(this).contents().find('body').css({
+		        background-color: '#222634'
+		    });
+		});
+    </script>
     </body>
 </html>
